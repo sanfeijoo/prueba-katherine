@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Test</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="scss/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <img src="./svg/menu.svg" alt="Menu" />
+      <img src="./svg/logo.svg" alt="Logo" />
+    </div>
+    <div>
+      <img src="./svg/search.svg" alt="Menu" />
+      <img src="./svg/cart.svg" alt="Logo" class="relative" />
+      <div class="noti">9</div>
+    </div>
+	</header>
+  <main>
+    <section class="content">
+      <h1>Cervezas</h1>
+      <ul class="products" id="products"></ul>
+      <div class="card">
+        <div>
+          <p>Sigue mercando</p>
+          <h2>Vinos</h2>
+        </div>
+        <img src="./svg/arrow-right.svg" alt="Ver vinos">
+      </div>
+    </section>
+    <footer class="footer">
+      <div  class="footer__bg">
+        <h2>¿Podemos ayudarle?</h2>
+        <div>
+          <figure>
+            <img src="./svg/intercom.svg" alt="Chat" />
+            <figcaption>Chat</figcaption>
+          </figure>
+          <figure>
+            <img src="./svg/phone.svg" alt="Llamar" />
+            <figcaption>Llamar</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="footer__info">
+        <ul>
+          <li>SOBRE NOSOTROS</li>
+          <li>MEDIDAS DE SEGURIDAD (COVID-19)</li>
+          <li>CÓMO MERCAR</li>
+          <li>PROVEEDORES</li>
+          <li>CONTÁCTENOS</li>
+          <li>ZONA DE COBERTURA</li>
+        </ul>
+        <figure>
+          <img src="./svg/instagram.svg" alt="Icono de instagram" />
+        </figure>
+        <p class="terms">POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES</p>
+        <div class="footer__info--bg">
+
+        </div>
+      </div>
+
+      <div class="footer__button">
+        <button class="modal-trigger"  class="open-modal" data-open="modal1">
+          Filtrar
+          <img src="./svg/filters.svg" alt="funcionalidad de filtrar" />
+        </button>
+
+      </div>
+
+      <div class="modal" id="modal1">
+        <div class="modal__dialog">
+          <header class="modal__header">
+            <button class="close-modal" aria-label="close modal" data-close>
+              ✕ 
+            </button>
+          </header>
+          <section class="modal__content">
+            <h2>Filtros</h2>
+            <div>
+              <label class="custom-radio-checkbox">
+                <span class="custom-radio-checkbox__text">Rubia</span>
+                <input class="custom-radio-checkbox__input" type="checkbox" name="beer" value="rubia">
+              </label>
+            </div>
+            <div>
+              <label class="custom-radio-checkbox">
+                <span class="custom-radio-checkbox__text">Morena</span>
+                <input class="custom-radio-checkbox__input" type="checkbox" name="beer" value="morena">
+              </label>
+            </div>
+            <div>
+              <label class="custom-radio-checkbox">
+                <span class="custom-radio-checkbox__text">Roja</span>
+                <input class="custom-radio-checkbox__input" type="checkbox" name="beer" value="roja">
+              </label>
+            </div>
+          </section>
+          <footer class="modal__footer">
+            <button class="clear">
+              Limpiar
+            </button>
+            <button class="filter">
+              Filtrar
+              <img src="./svg/filters.svg" alt="funcionalidad de filtrar" />
+            </button>
+          </footer>
+        </div>
+      </div>
+
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
