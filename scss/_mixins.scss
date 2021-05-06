@@ -1,0 +1,37 @@
+// ==========================================================================
+// Mixins BEM selectors (Block, Element, Modifier) Ej.: @include e(title) {}
+// ==========================================================================
+@mixin e($element) {
+   &__#{$element} {
+      @content;
+   }
+}
+
+// ==========================================================================
+// Anchos minimos (min-width) : @include mq-min(sm) {}
+// ==========================================================================
+@mixin mq-min($breakpoint) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (min-width: $breakpoint-value) {
+         @content;
+      }
+   } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';  
+   }
+}
+
+// ==========================================================================
+// Anchos maximos (max-width) : @include mq-max(sm) {}
+// ==========================================================================
+
+@mixin mq-max($breakpoint) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (max-width: ($breakpoint-value - 1)) {
+         @content;
+      }
+   } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+   }
+}

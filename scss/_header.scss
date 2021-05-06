@@ -1,0 +1,29 @@
+
+.header{
+  @extend .flex;
+  background: $grayscale-dark;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  & div
+    img:first-child{
+    margin-right: 12px;
+  }
+  .noti{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $primary;
+    top: 16px;
+    right: 14px;
+    border-radius: 50%;
+    color: $white;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .relative{
+    position: relative;
+  }
+}

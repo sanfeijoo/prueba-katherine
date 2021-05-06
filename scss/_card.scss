@@ -1,0 +1,15 @@
+.card{
+  border: $border;
+  padding: 12px 18px;
+  margin-bottom: 48px;
+  @extend .flex;
+  color: $grayscale-base;
+  justify-content: space-between;
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 24px;
+  }
+}
+

@@ -1,0 +1,43 @@
+// ========================================================================== 
+// COLORS
+// ========================================================================== 
+$primary: #0000A3;
+$grayscale-base: #101111;
+$grayscale-light: #F4F4F4;
+$grayscale-dark: #0F0F0F;
+$grayscale-complementary: #6D7275;
+$white: #ffffff;
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+$breakpoints: (
+   sm  : 412px,
+   md  : 768px,
+   lg  : 992px,
+   xl  : 1140px, 
+);
+
+$border: 1px solid #E5E5E5;
+
+.flex{
+   display: flex;
+   align-items: center;
+}
+
+.button-primary{
+   background: $primary;
+   padding: 7px 20px;
+   color: $white;
+   text-transform: uppercase;
+   border-radius: 4px;
+   font-weight: 600;
+   font-size: 14px;
+   border: none;
+   cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+   margin-bottom: 10px;
+   img{
+      margin-left: 10px;
+   }
+}
